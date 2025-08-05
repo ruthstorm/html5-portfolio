@@ -117,7 +117,7 @@
 							<p>Please feel free to contact me and reach out if you are looking for a Interface Alchemist.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form action="https://formspree.io/f/mrblyyqk" method="POST">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -133,26 +133,9 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="#" id="sendMailButton" class="button submit">Send Message</a></li>
+											<li><a href="" class="button submit">Send Message</a></li>
 										</ul>
 									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>Napa, CA <br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons social-links">
-												<li><a href="https://twitter.com/ruthstorm" target="new" alt="Twitter" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://github.com/ruthstorm" target="new" alt="GitHub" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://linkedin.com/in/ruthstorm" target="new" alt="LinkedIn" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
 								</section>
 							</div>
 						</div>
@@ -172,19 +155,6 @@
 			</footer>
 
 		<!-- Scripts -->
-		<script>
-			document.getElementById('sendMailButton').addEventListener('click', function (e) {
-				e.preventDefault();
-
-				const name = document.getElementById('name').value;
-				const email = document.getElementById('email').value;
-				const message = document.getElementById('message').value;
-
-				const mailtoLink = `mailto:storm.ruth@gmail.com?subject=Portfolio Contact from ${name}&body=From: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-
-				window.location.href = mailtoLink;
-			});
-		</script>
 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
