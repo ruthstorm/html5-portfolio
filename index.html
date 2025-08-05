@@ -9,6 +9,7 @@
 		<title>Ruth Storm</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="favicon_inuksuk.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -119,7 +120,7 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>What I do / Skills</h2>
-							<p>I'm a front-end force of nature — a TypeScript tactician, Angular ace, and SCSS stylist who thrives in the fast-paced world of Agile and scrum. Whether I'm untangling JSON webs, syncing states across components, or weaving UI magic with Angular Material, I build with clarity and purpose. Docker on Mac? No sweat. NgRx stores? I've got that mapped. I'm the kind of dev who doesn't just code — I architect experiences.</p>
+							<p>I'm a front-end force of nature with 15+ years of experience in software engineering, specializing in UX and Front-End development for EdTech. A TypeScript tactician, Angular ace, and SCSS stylist, I thrive in Agile environments, building user-centric experiences with clarity and purpose. From syncing states with NgRx to weaving polished UIs with Angular Material, I bring both technical depth and design intuition. I don’t just code — I craft intuitive, impactful solutions that elevate the user experience.</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fab fa-html5"></span>
@@ -163,9 +164,9 @@
 									<h3>GitHub</h3>
 								</section>
 							</div>
-							<ul class="actions">
+							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
@@ -173,7 +174,7 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>Please feel free to contact me and reach out if you are looking for a Interface Alchemist.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -192,34 +193,35 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a href="#" id="sendMailButton" class="button submit">Send Message</a></li>
 										</ul>
+										<!-- <ul class="actions">
+											<li><a href="mailto:your.email@example.com?subject=Portfolio Contact&body=Hi Ruth," class="button submit">Send Message</a></li>
+										</ul> -->
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
+											<span>California, <br />
 											USA</span>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Email</h3>
 											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
+										</li> -->
+										<!-- <li>
 											<h3>Phone</h3>
 											<span>(000) 000-0000</span>
-										</li>
+										</li> -->
 										<li>
 											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											<ul class="icons social-links">
+												<li><a href="https://twitter.com/ruthstorm" target="new" alt="Twitter" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://github.com/ruthstorm" target="new" alt="GitHub" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<!-- <li><a href="https://instagram.com/ruthlfstorm" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+												<li><a href="https://linkedin.com/in/ruthstorm" target="new" alt="LinkedIn" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -242,6 +244,20 @@
 			</footer>
 
 		<!-- Scripts -->
+		<script>
+			document.getElementById('sendMailButton').addEventListener('click', function (e) {
+				e.preventDefault();
+
+				const name = document.getElementById('name').value;
+				const email = document.getElementById('email').value;
+				const message = document.getElementById('message').value;
+
+				const mailtoLink = `mailto:storm.ruth@gmail.com?subject=Portfolio Contact from ${name}&body=From: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+
+				window.location.href = mailtoLink;
+			});
+		</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
